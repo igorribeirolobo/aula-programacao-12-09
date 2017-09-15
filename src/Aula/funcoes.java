@@ -10,22 +10,43 @@ public class funcoes {
 		this.resultado = this.resultado + a;
 
 	}
-	public void qtdNum(int num)
-	{  boolean valida = true;
-	   while(valida)
-	   {
-		if(num < 2)
+	public void Subtrair(int a)
+	{
+		if(this.resultado == 0)
 		{
-			JOptionPane.showMessageDialog(null, "Informe mais de 2 numeros!");
+			this.resultado = a;
 		}
 		else
 		{
-		this.num = num;
-		valida = false;
-     	}
-		
-	   }
+			this.resultado = this.resultado - a;
+		}
 	}
+	public void Multiplicar(int a)
+	{
+		if(this.resultado == 0)
+		{
+			this.resultado = a;
+		}
+		else
+		{
+			this.resultado = this.resultado * a;
+		}
+	}
+	public void Dividir(int a)
+	{
+		if(this.resultado == 0)
+		{
+			this.resultado = a;
+		}
+		else
+		{
+			this.resultado = this.resultado / a;
+		}
+	}
+	public void qtdNum(int num)
+	{ 
+		this.num = num;
+    }
 	public int getResultado()
 	{
 		return this.resultado;
